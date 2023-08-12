@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/RelativeL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/TxtNomina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="160dp"
+            android:text="Nomina"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/EdtNomina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_below="@id/TxtNomina"
+            android:hint="Ingresa tu Nomina"
+            android:textColor="@color/black"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            />
+
+        <TextView
+            android:id="@+id/TxtNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/EdtNomina"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="-2dp"
+            android:layout_marginEnd="165dp"
+            android:text="Nombre"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:paddingTop="20dp"/>
+
+        <EditText
+            android:id="@+id/EdtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TxtNombre"
+            android:layout_alignParentEnd="true"
+            android:hint="Ingresa tu nombre"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"/>
+
+        <TextView
+            android:id="@+id/TxtPuesto"
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/EdtNombre"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="160dp"
+            android:paddingTop="20dp"
+            android:text="Puesto"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/EdtPuesto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TxtPuesto"
+            android:layout_alignParentEnd="true"
+            android:hint="Ingresa tu Puesto"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/BtnBuscar"
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RelativeL"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Buscar"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/BtnLista"
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BtnBuscar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Lista"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/BtnAgregar"
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BtnLista"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Agregar"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/BtnModificar"
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BtnAgregar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Modificar"
+        android:textSize="20dp"
+        />
+    <Button
+        android:id="@+id/BtnEliminar"
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BtnModificar"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Eliminar"
+        android:textSize="20dp" />
+
+</RelativeLayout>
